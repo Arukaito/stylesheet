@@ -2,13 +2,13 @@
 // Keep usernames prefixed with a slash, it's important
 .author[href$="/Arukaito"]:not(.moderator){color: #FF3333 }
 .author[href$="/Arukaito"]:not(.moderator):after{content:" Staff ╰(=.=╰)"}
-.author[href$="/Arukaito"].moderator:after{content:"╰(=.=╰) "}
-.author[href$="/Arukaito"].moderator{font-size:0}
+.author[href$="/Arukaito"].moderator:after{content:"Anuncio Official╰(=.=╰)"}
+.author[href$="/Arukaito"].moderator{font-size:0.5}
 
 .author[href$="/ferf0"]:not(.moderator){color: #FFA233}
 .author[href$="/ferf0"]:not(.moderator):after{content:" Staff ╰(=.=╰)"}
-.author[href$="/ferf0"].moderator:after{content:"╰(=.=╰) "}
-.author[href$="/ferf0"].moderator{font-size:0}
+.author[href$="/ferf0"].moderator:after{content:"Anuncio Official╰(=.=╰) "}
+.author[href$="/ferf0"].moderator{font-size:0.5}
 
 /*// Fanart contest flairs
 .author[href$="/SteamyTomato"]:after,
