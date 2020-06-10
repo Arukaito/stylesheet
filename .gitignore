@@ -16,3 +16,5 @@ css_validation_result.html
 .env
 env
 *.pyc
+
+Graphics/
