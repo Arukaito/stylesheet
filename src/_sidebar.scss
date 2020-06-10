@@ -98,10 +98,10 @@ $sidebar-image-other-height: 83px; // set to -10px when not being used
 	background-image: url("images/sidebar2.png");*/
 	
 	// you get the idea
-	.search-page & {
+	/*.search-page & {
 		top: 115px + 10px + $sidebar-image-height + 10px;
 	}
-}
+}*/
 
 // Move the search bar above the image
 .side #search {
