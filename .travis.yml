@@ -1,25 +1,35 @@
+# Python is required for the deploy script
 language: python
 python:
-- '3.6'
+- '3.5'
 
+# The Sass part is the actual build
 install:
-- pip install -r utils/requirements.txt
-
+- rvm install 2.4.1
+- gem install sass
+- pip install -r .update/requirements.txt
 script:
-- |
-  if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
-    if [ "$TRAVIS_BRANCH" = "master" ]; then
-      python utils/build.py --subreddit_name anime;
-    else
-      python utils/build.py --subreddit_name animestaging;
-    fi
-  else
-    python utils/validate.py;
-  fi
-
+- sass main.scss style.css
 deploy:
-- on:
-    all_branches: true
   provider: script
-  script: python utils/update.py
+  script: python .update/updateSubreddit.py
   skip_cleanup: true
+  on:
+    branch: master
+
+# The script also allows you to pass a subreddit name as an argument rather than as an environment variable, allowing you to upload different branches to different subreddits. For example:
+
+# deploy:
+# - provider: script
+#   script: python .update/updateSubreddit.py mainSubreddit
+#   skip_cleanup: true
+#   on:
+#     branch: master
+# - provider: script
+#   script: python .update/updateSubreddit.py stagingSubreddit
+#   skip_cleanup: true
+#   on:
+#     branch: staging
+
+# With the above config, any changes to the master branch would go to /r/mainSubreddit, and any changes on the staging branch would go to /r/stagingSubreddit.
+# For another example of this, see https://github.com/r-anime/stylesheet/blob/master/.travis.yml
