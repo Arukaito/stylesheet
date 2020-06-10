@@ -12,7 +12,7 @@ script:
 - sass main.scss style.css
 deploy:
   provider: script
-  script: python .update/updateSubreddit.py
+  script: python .update/updateSubreddit.py animexico
   skip_cleanup: true
   on:
     branch: master
