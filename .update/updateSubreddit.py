@@ -54,12 +54,8 @@ else:
 print("Writing stylesheet to /r/{}".format(sub_name))
 sub = r.subreddit(sub_name)
 try:
-    edit_msg = "https://github.com/{}/compare/{}".format(
-        os.environ['TRAVIS_REPO_SLUG'],
-        os.environ['TRAVIS_COMMIT_RANGE'])
-    sub.wiki['config/stylesheet'].edit(stylesheet, edit_msg)
+    sub.wiki['config/stylesheet'].edit(stylesheet)
 except e:
-    print(e.response.status_code)
     print("Ran into an error while uploading stylesheet; aborting.")
     raise e
 
