@@ -58,7 +58,7 @@ try:
         os.environ['TRAVIS_REPO_SLUG'],
         os.environ['TRAVIS_COMMIT_RANGE'])
     sub.wiki['config/stylesheet'].edit(stylesheet, edit_msg)
-except HTTPError, e:
+except e:
     print(e.response.status_code)
     print("Ran into an error while uploading stylesheet; aborting.")
     raise e
