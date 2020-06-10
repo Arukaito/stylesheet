@@ -31,7 +31,7 @@ r = praw.Reddit(
     client_secret=client_secret,
     username=username,
     password=password,
-    user_agent="Animexico/0.1 by Arukaito"
+    user_agent="Animexico/0.1 by Arukaito")
 print("Logged into Reddit as /u/{}".format(username))
 
 # Read stylesheet
