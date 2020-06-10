@@ -5,9 +5,6 @@ python:
 install:
 - pip install -r utils/requirements.txt
 
-# Updates on master go to /r/anime
-# All other branches go to /r/animestaging for testing
-# Pull requests are validated only
 script:
 - |
   if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then

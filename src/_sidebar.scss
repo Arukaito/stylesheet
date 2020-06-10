@@ -92,10 +92,10 @@ $sidebar-image-other-height: 83px; // set to -10px when not being used
 		top: 115px + 10px;
 	}
 }
-.side [href*="#sidebarimg2"] {
+/*.side [href*="#sidebarimg2"] {
 	top: 170px + 10px + $sidebar-image-height;
 	height: $sidebar-image-other-height;
-	background-image: url("images/sidebar2.png");
+	background-image: url("images/sidebar2.png");*/
 	
 	// you get the idea
 	.search-page & {
@@ -109,8 +109,9 @@ $sidebar-image-other-height: 83px; // set to -10px when not being used
 	top: 125px;
 }
 
+// Para Futuros usos de Discord y Twitter
 // Discord and Twitter buttons
-.side .titlebox [href*="discord.gg/r-anime"], .side [href*="twitter.com/RedditChan"] {
+/*.side .titlebox [href*="discord.gg/r-anime"], .side [href*="twitter.com/RedditChan"] {
 	display: block;
 	color: #FFF;
 	padding-right: 9px;
@@ -162,4 +163,4 @@ $sidebar-image-other-height: 83px; // set to -10px when not being used
 
 .side .titlebox [href*="twitter.com/RedditChan"]:hover {
 	background: #198bd1;
-}
+}*/
