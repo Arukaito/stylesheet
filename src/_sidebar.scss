@@ -95,10 +95,10 @@ $sidebar-image-other-height: 83px; // set to -10px when not being used
 /*.side [href*="#sidebarimg2"] {
 	top: 170px + 10px + $sidebar-image-height;
 	height: $sidebar-image-other-height;
-	background-image: url("images/sidebar2.png");*/
+	background-image: url("images/sidebar2.png");
 	
 	// you get the idea
-	/*.search-page & {
+	.search-page & {
 		top: 115px + 10px + $sidebar-image-height + 10px;
 	}
 }*/

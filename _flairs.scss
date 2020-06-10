@@ -3,14 +3,14 @@
 .author[href$="/Arukaito"]:not(.moderator){color: #FF3333 }
 .author[href$="/Arukaito"]:not(.moderator):after{content:" Staff ╰(=.=╰)"}
 .author[href$="/Arukaito"].moderator:after{content:"Anuncio Official╰(=.=╰)"}
-.author[href$="/Arukaito"].moderator{font-size:0.5}
+.author[href$="/Arukaito"].moderator{font-size:0}
 
 .author[href$="/ferf0"]:not(.moderator){color: #FFA233}
 .author[href$="/ferf0"]:not(.moderator):after{content:" Staff ╰(=.=╰)"}
 .author[href$="/ferf0"].moderator:after{content:"Anuncio Official╰(=.=╰) "}
-.author[href$="/ferf0"].moderator{font-size:0.5}
+.author[href$="/ferf0"].moderator{font-size:0}
 
-/*// Fanart contest flairs
+// Fanart contest flairs
 .author[href$="/SteamyTomato"]:after,
 .author[href$="/cheesewoo"]:after,
 .author[href$="/Earth2Mars"]:before {
@@ -42,4 +42,4 @@
 .comment .author[href$="/Earth2Mars"]:hover:before {padding-right: 136px}
 // Custom colors for the other two
 .author[href$="/Earth2Mars"]:before {color: #00E6B8}
-.author[href$="/cheesewoo"]:after {color: #ffb973}*/
+.author[href$="/cheesewoo"]:after {color: #ffb973}
