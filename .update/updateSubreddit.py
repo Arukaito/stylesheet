@@ -1,6 +1,7 @@
 # Hi, if you're modifying this file to run yourself you should change the user agent, thanks.
 
 import praw, os, re
+from requests.exceptions import HTTPError
 from csscompressor import compress
 
 # Read config from environment variables
@@ -31,7 +32,8 @@ r = praw.Reddit(
     client_secret=client_secret,
     username=username,
     password=password,
-    user_agent="Animexico/0.1 by Arukaito")
+    user_agent= ("Animexico Stylesheet 1.0 by /u/Arukaito "
+...               "github.com/Arukaito/stylesheet/")
 print("Logged into Reddit as /u/{}".format(username))
 
 # Read stylesheet
@@ -53,8 +55,12 @@ else:
 print("Writing stylesheet to /r/{}".format(sub_name))
 sub = r.subreddit(sub_name)
 try:
+    edit_msg = "https://github.com/{}/compare/{}".format(
+        os.environ['TRAVIS_REPO_SLUG'],
+        os.environ['TRAVIS_COMMIT_RANGE'])
     sub.wiki['config/stylesheet'].edit(stylesheet, edit_msg)
-except Exception as e:
+except HTTPError, e:
+    print(e.response.status_code)
     print("Ran into an error while uploading stylesheet; aborting.")
     raise e
 
