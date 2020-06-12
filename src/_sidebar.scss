@@ -111,7 +111,7 @@ $sidebar-image-other-height: 83px; // set to -10px when not being used
 
 // Para Futuros usos de Discord y Twitter
 // Discord and Twitter buttons
-/*.side .titlebox [href*="discord.gg/r-anime"], .side [href*="twitter.com/RedditChan"] {
+.side .titlebox [href*="discord.gg/Q3er2mj"], .side [href*="twitter.com/RedditChan"] {
 	display: block;
 	color: #FFF;
 	padding-right: 9px;
@@ -127,25 +127,25 @@ $sidebar-image-other-height: 83px; // set to -10px when not being used
 	align-items: center;
 	transition: 200ms;
 }
-.side .titlebox [href*="discord.gg/r-anime"]:hover, .side [href*="twitter.com/RedditChan"]:hover {
+.side .titlebox [href*="discord.gg/Q3er2mj"]:hover, .side [href*="twitter.com/RedditChan"]:hover {
 	color: #FFF;
 	background: #557eb8;
 	top: -2px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-.side .titlebox [href*="discord.gg/r-anime"]:before, .side [href*="twitter.com/RedditChan"]:before {
+.side .titlebox [href*="discord.gg/Q3er2mj"]:before, .side [href*="twitter.com/RedditChan"]:before {
 	content: "";
 	width: 47px;
 	height: 44px;
 	display: block;
 	background: url("images/general.png") 0 -128px/128px no-repeat;
 }
-.side .titlebox [href*="discord.gg/r-anime"] em, .side [href*="twitter.com/RedditChan"] em {
+.side .titlebox [href*="discord.gg/Q3er2mj"] em, .side [href*="twitter.com/RedditChan"] em {
 	display: block;
 	font-weight: normal;
 	opacity: 0.8;
 }
-.side .titlebox [href*="discord.gg/r-anime"]:hover em, .side [href*="twitter.com/RedditChan"]:hover em {
+.side .titlebox [href*="discord.gg/Q3er2mj"]:hover em, .side [href*="twitter.com/RedditChan"]:hover em {
 	text-decoration: underline;
 }
 
@@ -163,4 +163,4 @@ $sidebar-image-other-height: 83px; // set to -10px when not being used
 
 .side .titlebox [href*="twitter.com/RedditChan"]:hover {
 	background: #198bd1;
-}*/
+}

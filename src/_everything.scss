@@ -656,7 +656,7 @@ body #progressIndicator {
 .thumbnail.self {background: 0 -1084px}
 .thumbnail[href*="recom"] {background: 0 -874px}
 .thumbnail[href*="cosplay"] {background: 0 -524px}
-.thumbnail[href*="satire"] {background: 0 -1014px}
+.thumbnail[href*="sarcasmo"] {background: 0 -1014px}
 .thumbnail[href*="/wt"] {background: 0 -1224px}
 .linkflair-green .thumbnail {background: 0 -734px}
 .thumbnail[href*="fanart"] {background: 0 -664px}
@@ -712,7 +712,7 @@ body #progressIndicator {
 }
 #text-desc {font-size: 0}
 #text-desc:after {
-	content: 'You are submitting a text-based post. Speak your mind. A title and a text body are both required. Beginning your title with "vote up if" is violation of intergalactic law.';
+	content: 'Estas subiendo un post de solamente texto.. es para una recomendacion ? es para debatir algo? aqui es donde lo escribes... no te olvides de seleccionar un Flair a tu post indicando la categoria';
 	font-size: small
 }
 #text-field .roundfield-description {
