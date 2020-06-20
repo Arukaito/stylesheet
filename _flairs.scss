@@ -13,12 +13,12 @@
 // Fanart contest flairs
 .author[href$="/SteamyTomato"]:after,
 .author[href$="/cheesewoo"]:after,
-.author[href$="/Earth2Mars"]:before {
+.author[href$="/omegaigniz"]:before {
 	// Hack: In order to clip the spritesheet to only the part we need, we use
 	// background-clip: content-box; and rely on the text overflowing on hover.
 	// To ensure there's enough room for the text on hover, we set an arbitrary
 	// padding-right that's wide enough to contain all the text.
-	content: " Fanart Contest Winner!";
+	content: " #1 Concurso de Logotipo!";
 	color: #37ada3;
 	background: content-box url("images/general.png") 0 -115px/128px no-repeat red;
 	display: inline-block;
